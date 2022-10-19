@@ -62,7 +62,7 @@ you won't have to type your user name and password every time).
 
 With ssh set up, you can use:
 
-   git clone -o <username> git@github.com:<username>/2022_contributing_to_open_source.git
+    git clone -o <username> git@github.com:<username>/2022_contributing_to_open_source.git
 
 Be sure to replace ``<username>`` with your GitHub username in both cases!
 
@@ -125,11 +125,11 @@ Once you've done at least one of these, you can move to the next step!
  
  * you can install your ``pr_review`` package with:
      
-     pip install .
+       pip install .
  
  * For running the formal tests, the testing library ``pytest`` is need to be installed. Once it is available run the tests with:
  
-    pytest pr_review
+       pytest pr_review
  
  It will produce an output like the following:
  
