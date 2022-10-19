@@ -14,6 +14,7 @@ The API is as follows:
 This computes the Fibonacci sequence of a number using a recursive approach.
 The API is as follows:
 
-    >>> fibonnaccci(100)
+    >>> from simple_functions import fibonacci
+    >>> fibonacci(100)
     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
