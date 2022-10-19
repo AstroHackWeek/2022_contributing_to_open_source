@@ -3,6 +3,7 @@ functions that do stuf and thats:
 
     >>> from simple_functions import factorial
     >>> factorial(10)
+        some very large number
     
 
 and this other part does something.  I forget why that I did it:
