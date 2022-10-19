@@ -34,5 +34,3 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
     format_string = '{}:{}:{:.' + str(decimals) + 'f}'
     return format_string.format(hours, minutes, seconds)
 
-# print the output of the code to check
-print(angle_to_sexigesimal(RA_deg))
