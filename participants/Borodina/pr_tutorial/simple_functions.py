@@ -1,4 +1,8 @@
 def fibonacci(max):
+    if type(max) != int:
+        raise ValueError('max value should be int')
+    if max < 1:
+        raise ValueError('max value should be more than 1')
     values = [0, 1]
     while values[-2] + values[-1] <= max:
         values.append(values[-2] + values[-1])
