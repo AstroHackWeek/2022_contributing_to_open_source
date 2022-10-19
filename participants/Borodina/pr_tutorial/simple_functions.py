@@ -4,7 +4,7 @@ def fibonacci(max):
     Output: the list of fibonacci numbers that are not greater than the input value
     """
     if type(max) != int:
-        raise ValueError('max value should be int')
+        raise ValueError('max value should be integer')
     if max < 1:
         raise ValueError('max value should be more than 1')
     values = [0, 1]
