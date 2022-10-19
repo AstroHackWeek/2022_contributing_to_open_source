@@ -10,17 +10,19 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
     angle_in_degrees : float
         A scalar angle, expressed in degrees
 
+    decimals : int
+        An integer with the desired precision of your output in seconds
     Returns
     -------
     hms_str : str
         The sexigesimal string giving the hours, minutes, and seconds of RA for
-        the given `angle_in_degrees`
+        the given `angle_in_degrees` and precision in decimals
 
     """
     if math.floor(decimals) != decimals:
         raise OSError('decimals should be an integer!')
 
-    hours_num = angle_in_degrees*24/180
+    hours_num = angle_in_degrees*24/360
     hours = math.floor(hours_num)
 
     min_num = (hours_num - hours)*60
