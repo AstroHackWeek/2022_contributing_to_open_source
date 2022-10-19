@@ -12,8 +12,11 @@ def factorial(value):
         return value * factorial(value - 1)
     
 def is_prime(value):
-    for i in range(2,value):
-      if (value%i) == 0:
+    if value == 1:
         return False
-    return True
+    else:
+        for i in range(2,value):
+          if (value%i) == 0:
+            return False
+        return True
         
