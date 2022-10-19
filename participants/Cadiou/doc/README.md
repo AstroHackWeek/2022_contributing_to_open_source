@@ -1,6 +1,6 @@
 This package contains useful mathematical functions.
 
-## factorial function
+## Factorial function
 
 This computes the factorial of a number using a non-recursive approach.
 The API is as follows:
