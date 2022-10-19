@@ -47,3 +47,26 @@ def factorial(value: int) -> int:
         return 1
     else:
         return value * factorial(value - 1)
+
+def is_prime(value: int, /) -> bool:
+    """Check if a value is prime.
+    
+    Argument:
+    ---------
+    value: int, positive
+        The value to check if it is prime.
+    
+    Returns:
+    --------
+    is_prime: bool
+        True if the value is prime, False otherwise.
+    """
+    if value < 0:
+        raise ValueError("value must be positive, got {}".format(value))
+    elif value == 0 or value == 1:
+        return False
+
+    for i in range(2, value):
+        if value % i == 0:
+            return False
+    return True
