@@ -17,10 +17,10 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
         the given `angle_in_degrees`
 
     """
-    if math.floor(decimals) != decimals:
+    if not isinstance(decimals, Integral):
         raise OSError('decimals should be an integer!')
 
-    hours_num = angle_in_degrees*24/180
+    hours_num = angle_in_degrees*24/360
     hours = math.floor(hours_num)
 
     min_num = (hours_num - hours)*60
