@@ -121,7 +121,33 @@ different types of changes depending on what you are mos. You can choose to tack
 
 Once you've done at least one of these, you can move to the next step!
 
-### 1f: Commit the changes and push it to your fork
+### 1f: Test your package
+ 
+ * you can install your ``pr_review`` package with:
+     
+     pip install .
+ 
+ * For running the formal tests, the testing library ``pytest`` is need to be installed. Once it is available run the tests with:
+ 
+    pytest pr_review
+ 
+ It will produce an output like the following:
+ 
+ ```
+============================================================== test session starts ==============================================================
+platform darwin -- Python 3.10.0, pytest-7.1.3, pluggy-1.0.0
+rootdir: /Users/bsipocz/munka/konferenciak/astrohackweek22/contributing_to_open_source/participants/Sipőcz
+plugins: anyio-3.6.1, remotedata-0.3.3, requests-mock-1.9.3, rerunfailures-10.2, astropy-header-0.2.2, doctestplus-0.12.1, mock-3.8.2, dependency-0.5.1, astropy-0.10.0, filter-subpackage-0.1.1, openfiles-0.5.0, nbval-0.9.7.dev0, hypothesis-6.54.5, cov-3.0.0, arraydiff-0.5.0
+collected 1 item                                                                                                                                
+
+pr_tutorial/tests/test_simple_function.py .                                                                                               [100%]
+
+=============================================================== 1 passed in 0.02s ===============================================================
+```
+ 
+ * If all tests pass, and you are happy with the test coverage go to the next step and commit the changes. Otherwise you can add more tests (e.g. add a test that covers the buggy functionality.
+ 
+### 1g: Commit the changes and push it to your fork
 
 Now that you've made changes, the next step is to commit these changes to the repository. You can see
 what files have changed since the last commit with:
@@ -159,7 +185,7 @@ If the commit is there, you are now ready to push your changes to GitHub! You ca
 If this succeeds, you are ready for the next step. If you get an error about the changes being rejected,
 ask your friendly instructors!
 
-### 1g: Open a pull request
+### 1h: Open a pull request
 
 At this point, go to your fork on GitHub at ``https://github.com/<username>/pr_review_tutorial``, and
 you should see a yellow-ish banner that looks like this:
