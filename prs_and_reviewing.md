@@ -219,18 +219,18 @@ If you are opening a pull request on a busy repository such as the core astropy 
 may make improvements to the code after you have opened it, and you may need to rely on their changes.
 If this happens, you can use ``git remote`` to add the main repository as a source you can get changes from:
 
-    git remote add swincas https://github.com/AstroHackWeek/2022_contributing_to_open_source
+    git remote add AstroHackWeek https://github.com/AstroHackWeek/2022_contributing_to_open_source
 
 You only need to do this once for a given local repository.
 
 Once you added the remote, you can do:
 
-    git fetch swincas
+    git fetch AstroHackWeek
 
 to fetch the latest changes from the main repository. Note that this won't update your code - to do
 this, make sure all your changes are committed, and then use:
 
-    git rebase swincas/main
+    git rebase AstroHackWeek/main
 
 Provided that there are no changes in the main repository that conflict, you should then be good to
 go and your local branch will contain both the latest changes from the main repository, and your local

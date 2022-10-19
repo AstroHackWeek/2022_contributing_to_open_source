@@ -1,7 +1,7 @@
-# Cookies 'n' Code: Contributing to Open Source
+# Contributing to Open Source: Pull request and review
 
-### 2021 April 28,
-#### Centre for Astrophysics and Supercomputing (CAS), Swinburne
+### 2022 October 19
+#### AstroHackWeek 2022, Heidelberg, Germany
 
 #### [Brigitta Sipőcz](https://github.com/bsipocz/), Caltech/IPAC
 #### [Clara Brasseur](https://github.com/ceb8/), University of St. Andrews
