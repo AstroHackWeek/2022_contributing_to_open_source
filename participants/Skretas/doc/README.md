@@ -1,9 +1,9 @@
 Ok so I guess you are reading this cuz you wanna use my code. There are some
-functions that do stuf and thats:
+functions that do stuf and thats all:
 
     >>> from simple_functions import factorial
     >>> factorial(10)
-    9
+   3628800 
 
 and this other part does something.  I forget why that I did it:
 
