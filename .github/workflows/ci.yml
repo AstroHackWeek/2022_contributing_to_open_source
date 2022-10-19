@@ -7,7 +7,8 @@ jobs:
 
     runs-on: ubuntu-latest
     working-directory: 2022_contributing_to_open_source/participants/Fouesneau/
-    strategy:
+
+  strategy:
       matrix:
         python-version: ["3.7", "3.8", "3.9", "3.10"]
 
