@@ -1,0 +1,8 @@
+setup.py
+AHW_PR_tutorial.egg-info/PKG-INFO
+AHW_PR_tutorial.egg-info/SOURCES.txt
+AHW_PR_tutorial.egg-info/dependency_links.txt
+AHW_PR_tutorial.egg-info/top_level.txt
+pr_tutorial/__init__.py
+pr_tutorial/buggy_function.py
+pr_tutorial/simple_functions.py
