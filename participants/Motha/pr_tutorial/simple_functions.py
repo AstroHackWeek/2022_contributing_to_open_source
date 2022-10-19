@@ -10,3 +10,21 @@ def factorial(value):
         return 1
     else:
         return value * factorial(value - 1)
+
+ 
+
+def is_Prime(value):
+    if(value==1):
+        return False
+    if(value==2):
+        return True
+    if(value%2==0):
+        return False
+
+    i = 3
+
+    while(i<math.sqrt(value)+1):
+        if value%i==0:
+            return False
+        i += 2
+    return True
