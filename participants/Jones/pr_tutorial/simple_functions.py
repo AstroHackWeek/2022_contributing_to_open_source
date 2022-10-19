@@ -12,8 +12,8 @@ def factorial(value):
         return value * factorial(value - 1)
 
 def is_prime(value):
-    for n in range(2, int(value/2)+1):
-	if value%n == 0:
+    for n in range(2, int(value / 2) + 1):
+	if value % n == 0:
 		return False
     return True
 
