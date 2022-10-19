@@ -1,13 +1,14 @@
-Ok so I guess you are reading this cuz you wanna use my code. There are some
-functions that do stuf and thats:
+The scripts in the repo have a few funtions. To use them you need to import them and below you can see how to use them.
+
+This function calculates a factorial.
 
     >>> from simple_functions import factorial
     >>> factorial(10)
     9
 
-and this other part does something.  I forget why that I did it:
+This function generates the fibonnaccci sequence.
 
     >>> fibonnaccci(100)
     [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-If you can't use it, its kind of your problem, not mine!
+If you can't use it, then you can raise the issue and I'll look into it asap!
