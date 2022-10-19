@@ -28,7 +28,7 @@ def fibonacci(vmax: int) -> List[int]:
     return values
 
 
-def factorial(value: int) -> int:
+def factorial(value: int, /) -> int:
     """Compute the factorial of a value.
     
     Argument:

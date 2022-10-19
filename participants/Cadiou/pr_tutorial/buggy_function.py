@@ -1,7 +1,8 @@
 import math
+from numbers import Integral
 
 
-def angle_to_sexigesimal(angle_in_degrees, decimals=3):
+def angle_to_sexigesimal(angle_in_degrees: float, decimals: int=3) -> str:
     """
     Convert the given angle to a sexigesimal string of hours of RA.
 
@@ -9,6 +10,8 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
     ----------
     angle_in_degrees : float
         A scalar angle, expressed in degrees
+    decimals : int, optional
+        The number of decimals to use in the output string, by default 3
 
     Returns
     -------
