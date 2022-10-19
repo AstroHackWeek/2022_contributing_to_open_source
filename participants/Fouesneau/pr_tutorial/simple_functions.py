@@ -9,7 +9,9 @@ def fibonacci(max: int) -> List[int]:
 
 
 def factorial(value: int) -> int:
-    """ Calculate the factorial of a value """
+    """ Calculate the factorial of a positive value """
+    if value < 0:
+        raise ValueError("Value needs to be positive")
     if value == 0:
         return 1
     else:
