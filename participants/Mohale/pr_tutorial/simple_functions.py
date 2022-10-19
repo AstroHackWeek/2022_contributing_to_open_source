@@ -10,3 +10,9 @@ def factorial(value):
         return 1
     else:
         return value * factorial(value - 1)
+
+def somep_other_function_i_added(input):
+
+    some_return_vale = factorial(fibonacci(value))
+    
+    return some_return_vale
