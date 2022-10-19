@@ -12,11 +12,25 @@ def factorial(value):
         return value * factorial(value - 1)
     
 def is_prime(value):
-    if value == 1:
-        return False
-    else:
-        for i in range(2,value):
-          if (value%i) == 0:
-            return False
-        return True
-        
+    """Checks if a value is an integer then if it is 
+    a prime number or not."""
+    while True:
+        try:
+            val = int(value)
+        except ValueError:
+            print("Error! Only input integers!")
+            break
+        else:
+            if value == 1:
+                return False
+            else:
+                try:
+                    for i in range(2,value):
+                      if (value%i) == 0:
+                        return False
+                    return True
+                except TypeError:
+                    print("Error! Only input integers!")
+                    break
+            break
+            
