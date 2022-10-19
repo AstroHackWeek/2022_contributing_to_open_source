@@ -5,8 +5,14 @@ def fibonacci(max):
     return values
 
 
-def factorial(value):
+def factorial(value):       
+    '''
+    This function calculates the factorial
+
+    value: float input
+    '''  
     if value == 0:
         return 1
     else:
         return value * factorial(value - 1)
+
