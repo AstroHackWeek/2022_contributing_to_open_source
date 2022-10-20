@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 
 def angle_to_sexigesimal(angle_in_degrees, decimals=3):
@@ -17,10 +18,11 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
         the given `angle_in_degrees`
 
     """
+    
     if math.floor(decimals) != decimals:
         raise OSError('decimals should be an integer!')
 
-    hours_num = angle_in_degrees*24/180
+    hours_num = np.abs(angle_in_degrees)*24/360
     hours = math.floor(hours_num)
 
     min_num = (hours_num - hours)*60
@@ -29,4 +31,5 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
     seconds = (min_num - minutes)*60
 
     format_string = '{}:{}:{:.' + str(decimals) + 'f}'
-    return format_string.format(hours, minutes, seconds)
+    sign_string = '-' if angle_in_degrees < 0 else ''
+    return sign_string + format_string.format(hours, minutes, seconds)
