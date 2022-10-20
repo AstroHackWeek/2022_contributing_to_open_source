@@ -54,9 +54,7 @@ If you do **not** have 2-factor authentication set up on GitHub, you can use:
 
     git clone -o <username> https://github.com/<username>/2022_contributing_to_open_source
 
-If you **do** have 2-factor authentication set up on GitHub, you first need to make sure that 
-you  have ssh set up for GitHub (if not, follow the instructions 
-[here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh). 
+GitHub has turned off password authentication, so you will need to set up token access for HTTPS, or you could also authenticate with ssh (follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) ). 
 If you use GitHub a lot, enabling 2-factor authentication and ssh is a good idea (it also means
 you won't have to type your user name and password every time). 
 
