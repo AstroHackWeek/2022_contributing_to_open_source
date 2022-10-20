@@ -50,11 +50,14 @@ where ``<username>`` is your GitHub username.
 
 Now that you have forked your repository, you can clone it to your computer.
 
-If you do **not** have 2-factor authentication set up on GitHub, you can use:
+You can use HTTPS:
 
     git clone -o <username> https://github.com/<username>/2022_contributing_to_open_source
 
-GitHub has turned off password authentication, so you will need to set up token access for HTTPS, or you could also authenticate with ssh (follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) ). 
+GitHub has turned off password authentication, so you will need to set up token access for HTTPS. 
+Follow these [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) to generate a token, and then use it in place of your password.
+
+You can also authenticate with ssh (follow the [instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) ). 
 If you use GitHub a lot, enabling 2-factor authentication and ssh is a good idea (it also means
 you won't have to type your user name and password every time). 
 
