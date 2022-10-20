@@ -1,4 +1,4 @@
-Hi to everyone! This is a small guide to use my python scripts for didactic in astronomy department. Here there are some useful functions for Mathematics classes. Here tehre are some examples:
+Hi to everyone! This is a small guide to use my python scripts for didactic in astronomy department. Here there are some useful functions for Mathematics classes. Here are some examples:
 
     >>> from simple_functions import factorial
     >>> factorial(10)
