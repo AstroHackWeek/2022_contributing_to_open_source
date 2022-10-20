@@ -30,3 +30,5 @@ def angle_to_sexigesimal(angle_in_degrees, decimals=3):
 
     format_string = '{}:{}:{:.' + str(decimals) + 'f}'
     return format_string.format(hours, minutes, seconds)
+
+
