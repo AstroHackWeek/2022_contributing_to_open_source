@@ -10,3 +10,14 @@ def factorial(value):
         return 1
     else:
         return value * factorial(value - 1)
+
+def is_prime(value):
+    if value > 2:
+        for i in range(2,value+1):
+            print(i)
+            if value%i == 0:
+                return False
+            else:
+                return True
+    else:
+        return True
