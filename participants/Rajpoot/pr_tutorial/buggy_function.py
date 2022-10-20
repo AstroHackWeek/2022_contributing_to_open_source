@@ -1,7 +1,7 @@
 import math
 
 
-def angle_to_sexigesimal(angle_in_degrees, decimals=3):
+def angle_to_sexagesimal(angle_in_degrees, decimals=3):
     """
     Convert the given angle to a sexigesimal string of hours of RA.
 
